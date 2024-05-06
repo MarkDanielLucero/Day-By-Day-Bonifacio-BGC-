@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+}
+
+header {
+  background-color: #085d37;
+  color: #061A14;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: right;
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #061A14;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #061A14;
+  margin-top: 50px;
+
+
+
+}
+h2 ,h3 {
+  color: #061A14;
+  margin-top: 75px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+.logo {
+  float: left; /* Float the logo to the left */
+  margin-right: 25px; /* Add some space between the logo and the navigation */
+  margin-top: 50px;
+}
+
+.logo img {
+  height: 150px; /* Adjust the height of your logo as needed */
+  width: auto; /* Ensure the width adjusts proportionally */
+}
+
+nav ul li a:hover {
+  color: blue; /* Change text color to blue */
+  background-color: lightgray; /* Change background color to light gray */
+  font-size: 18px; /* Increase font size */
+  transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.content-box {
+  background-color: #085d37;
+  color: #061A14;
+  float: right;
+  margin-top: 100px;
+  margin-left: 50px;
+  border: 1px solid #061A14; /* Border for the box */
+  padding: 10px; /* Padding inside the box */
+  display: inline-block; /* Make it inline-block so it wraps around its content */
+  transition: all 0.3s ease;
+}
+
+/* Initially hide the content */
+.hover-content {
+  display: none;
+
+}
+
+/* Show the content when hovering over the navigation area */
+.hover-nav:hover + .content-box .hover-content {
+  display: block;
+
+}
+
+
+
