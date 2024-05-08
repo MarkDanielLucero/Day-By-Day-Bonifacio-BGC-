@@ -16,7 +16,7 @@ body {
 header {
   background-color: #085d37;
   color: #061A14;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 nav ul {
@@ -26,12 +26,13 @@ nav ul {
 nav ul li {
   float: right;
   display: inline;
-  margin-right: 30px;
+  margin-right: 50px;
+  margin-top: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #061A14;
+  color: white;
 }
 
 main {
@@ -103,6 +104,7 @@ nav ul li a:hover {
 .hover-content {
   display: none;
 
+
 }
 
 /* Show the content when hovering over the navigation area */
@@ -111,5 +113,14 @@ nav ul li a:hover {
 
 }
 
-
+.Verse {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white
+}
+.Chapter {
+  margin-top: 20px;
+  margin-left:  40px;
+  color: white
+}
 
