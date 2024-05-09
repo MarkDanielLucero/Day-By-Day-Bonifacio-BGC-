@@ -1,6 +1,6 @@
 
 @media only screen and (min-width: 800px) and (max-width: 1920px) {
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 144px) {
 
     header {
       background-position: center;
