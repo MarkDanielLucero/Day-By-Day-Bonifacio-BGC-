@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day By Day Bonifacio (BGC)</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
 </head>
 <body>
 <header>
-  <h1 class="week">Verse of the week</h1>
-  <h1 class="week">The LORD makes firm the steps of the one who delights in him; though he may stumble,   he will not fall, for the LORD upholds him with his hand.”<br> <br>Psalms 37:23-24 </h1>
-  <link rel="stylesheet" href="styles.css">
-
-</header>
-<header>
+  <h1 class="week">Verse of the week <br>  <br> The LORD makes firm the steps of the one who delights in him; though he may stumble,   he will not fall, for the LORD upholds him with his hand.”<br> <br>Psalms 37:23-24</h1>
   <div class="logo">
     <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/395137620_628786836133113_7642736299073364715_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WfoXlFrti8sQ7kNvgEn_q7R&_nc_ht=scontent.fmnl30-1.fna&oh=00_AfCa1RhLjmpbSJoUVIDzuIZmqd6jvy8iTUMDeMc7B8HIMA&oe=663EE7C7" alt="Your Church Logo">
   </div>
   <nav>
-    <!-- Your navigation menu -->
+    <ul>
+      <li><a href="#contacts">Contact</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Ministries</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#home">Home</a></li>
+    </ul>
   </nav>
 </header>
 
 <main>
-  <section>
-    <nav class="hover-nav">
-      <ul>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Ministries</a></li>
-        <li><a href="#">Location</a></li>
-        <li><a href="#">Home</a></li>
-      </ul>
-    </nav>
-    <!-- Home Page Content -->
-    <h1>Welcome to Day By Day BGC</h1>
-    <p>A brief overview or welcome message.</p>
-    <!-- Include service times, location, and contact details -->
-  </section>
+  <!-- Home Page Content -->
+  <h1>Welcome to Day By Day BGC</h1>
+  <p>A brief overview or welcome message.</p>
+
 
   <section>
     <!-- About Us Page Content -->
@@ -73,16 +64,28 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8043445208923!2d121.05022857457207!3d14.553178478236989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f3fa670a61%3A0x3c1b5f2d56d97a0d!2sMenarco%20Tower!5e0!3m2!1sen!2sph!4v1715011972416!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    <p>Include service times or schedules.</p>
   </section>
 
-  <section>
-    <!-- Contact Page Content -->
+
+
+  <section id="contacts">
     <h2>Contact Us</h2>
-    <form>
+    <div class="card">
+      <div class="image-box">
+        <img class="Photo1" src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-1/40874018_1809931605793519_6274096528168583168_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2Vx_3w192DcQ7kNvgGYudaI&_nc_ht=scontent-mnl1-1.xx&oh=00_AfCVhy7ZUFTIC2gdJy9mAcOHCDMrHoPcamV2jc-xbXWycw&oe=6663FEF9" alt="pastor">
+        <div class="content">
+          <h2>Cedric Corpuz</h2>
+          <p> What is Lorem Ipsum?
+             make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <form>
       <!-- Add form fields for name, email, message, etc. -->
       <input type="submit" value="Submit">
     </form>
     <p>Additional contact information (email, phone number).</p>
   </section>
-</main>
 
 <footer>
   <p>&copy; Your Church Name</p>
@@ -90,6 +93,20 @@
   <p>Social media links</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+</main>
 </body>
 </html>
